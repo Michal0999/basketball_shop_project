@@ -1,0 +1,843 @@
+/*
+
+    font-family: 'Bangers', cursive;
+    font-family: 'Paytone One', sans-serif;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 10px;
+	background-image: url(img/dark_wood.png);
+}
+
+body {
+	position: relative;
+}
+
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*przycisk przewijania*/
+.scrollup {
+	padding: 10px;
+	text-decoration: none;
+	position: fixed;
+	right: 15px;
+	bottom: 10px;
+	background-color: rgb(42, 42, 42);
+	border: 4px solid #e37e00;
+	border-radius: 5px;
+	text-align: center;
+	display: none;
+	z-index: 100;
+	transition: 0.6s;
+}
+
+.scrollup img {
+	width: 32px;
+}
+
+.scrollup:hover {
+	border: 4px solid #e37e00;
+	background-color: #e37e00;
+}
+
+/*social buttony*/
+
+.fb_button {
+	display: block;
+	position: fixed;
+	z-index: 110;
+	top: 5%;
+	right: -230px;
+	background-color: #393939;
+	text-decoration: none;
+	color: white;
+	font-size: 3rem;
+	border: 2px solid white;
+	padding: 5px 15px;
+	transition: ease-in-out 1s;
+}
+
+.button_text {
+	font-size: 2.7rem;
+	padding-left: 10px;
+	letter-spacing: 2px;
+}
+
+.fb_button:hover {
+	color: white;
+	background-color: #2054ff;
+	border: 2px solid white;
+	right: 1px;
+}
+
+.yt_button {
+	display: block;
+	position: fixed;
+	z-index: 110;
+	top: 16%;
+	right: -323px;
+	background-color: #393939;
+	text-decoration: none;
+	color: white;
+	font-size: 3rem;
+	border: 2px solid white;
+	padding: 5px 15px;
+	transition: ease-in-out 1s;
+}
+
+.yt_button:hover {
+	color: white;
+	background-color: #d61616;
+	border: 2px solid white;
+	right: 1px;
+}
+
+@media(min-width:533px) {
+	.yt_button {
+		top: 50%;
+	}
+}
+
+@media(min-width:768px) {
+	.fb_button {
+		top: 50%;
+		font-size: 5rem;
+	}
+
+	.yt_button {
+		top: 59%;
+		font-size: 5rem;
+	}
+}
+
+@media(min-width:1024px) {
+	.fb_button {
+		top: 45%;
+		font-size: 5rem;
+	}
+
+	.yt_button {
+		top: 59%;
+		font-size: 5rem;
+	}
+}
+
+@media(min-width:1366px) {
+	.fb_button {
+		top: 50%;
+		font-size: 3rem;
+	}
+
+	.yt_button {
+		top: 58%;
+		font-size: 3rem;
+	}
+}
+
+@media(min-width:1440px) {
+	.fb_button {
+		top: 50%;
+		font-size: 3rem;
+	}
+
+	.yt_button {
+		top: 58%;
+		font-size: 3rem;
+	}
+}
+
+/*sekcja header*/
+header {
+	overflow: hidden;
+	position: relative;
+	height: 60vh;
+	background-image: url(img/header.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+header img.user {
+	position: absolute;
+	top: 30%;
+	left: 3%;
+	width: 20%;
+}
+
+header a {
+	text-decoration: none;
+	color: white;
+}
+
+header button {
+	position: absolute;
+	top: 32%;
+	left: 25%;
+	padding: 5px 0;
+	border: 3px solid white;
+	font-size: 3rem;
+	font-family: 'Bangers', cursive;
+	padding: 8px 15px;
+	background-color: rgba(0, 0, 0, 0.6);
+	transition: 0.6s;
+	color: white;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+header button:hover {
+	background-color: black;
+	cursor: pointer;
+}
+
+header h1 {
+	position: absolute;
+	bottom: 15%;
+	font-size: 4rem;
+	font-family: 'Bangers', cursive;
+	background-color: rgba(0, 0, 0, 0.6);
+	width: 100%;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 20px 0;
+	letter-spacing: 3px;
+}
+
+header h1 .heart {
+	font-size: 4rem;
+	color: red;
+}
+
+@media(min-width:360px) {
+	header img.user {
+		position: absolute;
+		top: 30%;
+		left: 3%;
+		width: 23%;
+	}
+
+	header button {
+		font-size: 4rem;
+	}
+}
+
+@media(min-width:533px) {
+	header h1 {
+		bottom: 4%;
+	}
+
+	header img.user {
+		top: 26%;
+		left: 15%;
+		width: 15%;
+	}
+
+	header button {
+		top: 30%;
+		left: 30%;
+	}
+}
+
+@media(min-width:640px) {
+	header {
+		height: 60vh;
+	}
+
+	header button {
+		font-size: 4.5rem;
+	}
+}
+
+@media(min-width:768px) {
+	header {
+		height: 60vh;
+	}
+
+	header img.user {
+		top: 26%;
+		left: 5%;
+		width: 25%;
+	}
+
+	header button {
+		font-size: 9rem;
+	}
+
+	header h1 {
+		font-size: 9rem;
+		letter-spacing: 8px;
+	}
+
+	header h1 .heart {
+		font-size: 10rem;
+	}
+
+	.scrollup img {
+		width: 64px;
+	}
+}
+
+@media(min-width:1024px) {
+	header {
+		height: 60vh;
+	}
+
+	header img.user {
+		left: 12%;
+		width: 15%;
+	}
+}
+
+@media(min-width:1366px) {
+	header {
+		height: 60vh;
+	}
+
+	header h1 {
+		font-size: 12rem;
+		letter-spacing: 15px;
+		bottom: 25%;
+	}
+
+	header h1 .heart {
+		font-size: 15rem;
+	}
+
+	header button {
+		top: 4%;
+		left: 85%;
+		font-size: 3rem;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	header img.user {
+		top: 3%;
+		left: 80%;
+		width: 4%;
+	}
+
+	.scrollup img {
+		width: 32px;
+	}
+}
+
+
+@media(min-width:1440px) {
+	header {
+		height: 60vh;
+	}
+
+	header h1 {
+		font-size: 12rem;
+		letter-spacing: 15px;
+		bottom: 25%;
+	}
+
+	header h1 .heart {
+		font-size: 15rem;
+	}
+
+	header button {
+		top: 4%;
+		left: 85%;
+		font-size: 3rem;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+
+	header img.user {
+		top: 3%;
+		left: 80%;
+		width: 4%;
+	}
+
+	.scrollup img {
+		width: 32px;
+	}
+}
+
+/*sekcja nav*/
+nav {
+	border-top: 4px solid white;
+	border-bottom: 4px solid white;
+	z-index: 100;
+}
+
+nav > div > a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: left;
+	font-size: 4rem;
+	letter-spacing: 4px;
+	padding: 10px 0;
+	padding-left: 15px;
+	border-bottom: 2px solid white;
+}
+
+nav > div:last-child > a {
+	border-bottom: 0;
+}
+
+nav > div > a:hover {
+	color: black;
+	background-color: #9d6d2b;
+}
+
+nav > div > ul > li > a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	text-align: right;
+	font-size: 3rem;
+	padding: 15px 0;
+	padding-right: 20px;
+}
+
+nav > div > ul > li > a:hover {
+	color: black;
+	background-color: #15ad44;
+}
+
+
+nav > div > ul {
+	display: none;
+	list-style: none;
+}
+
+nav > div:hover > ul {
+	display: block;
+}
+
+@media(min-width:768px) {
+	nav > div > a {
+		font-size: 6rem;
+	}
+
+	nav > div > ul > li > a {
+		font-size: 5rem;
+	}
+}
+
+@media(min-width:1366px) {
+	nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+		background-color: #2e2e2e;
+		border-top: 3px solid #e37e00;
+		border-bottom: 2px solid #e37e00;
+	}
+
+	nav div {
+		float: left;
+		width: 16.66666%;
+		height: 10vh;
+		letter-spacing: 5px;
+		transition: 0.6s;
+	}
+
+	nav > div > a {
+		height: 10vh;
+		text-align: center;
+		font-size: 2.5rem;
+		border-bottom: 0;
+		transition: 1s;
+		padding: 20px 0;
+	}
+
+	nav > div > ul > li > a {
+		font-size: 2.8rem;
+		z-index: 1;
+		position: relative;
+		text-align: center;
+		padding: 10px;
+		transition: 1s;
+		padding: 20px 5px;
+	}
+
+	nav > div > ul > li > a:hover {
+		color: black;
+		background-color: #e37e00;
+	}
+
+	nav div ul {
+		border: 4px solid #e37e00;
+		background-color: #2e2e2e;
+	}
+
+	nav > div > a:hover {
+		color: black;
+		background-color: #e37e00;
+	}
+
+	nav > div:hover {
+		cursor: pointer;
+		color: black;
+		background-color: #e37e00;
+	}
+}
+
+@media(min-width:1440px) {
+	nav {
+		position: sticky;
+		top: 0;
+		left: 0;
+		background-color: #2e2e2e;
+		border-top: 3px solid #e37e00;
+		border-bottom: 2px solid #e37e00;
+	}
+
+	nav div {
+		float: left;
+		width: 16.66666%;
+		height: 9vh;
+		letter-spacing: 5px;
+		transition: 0.6s;
+	}
+
+	nav > div > a {
+		height: 9vh;
+		text-align: center;
+		font-size: 2.5rem;
+		border-bottom: 0;
+		transition: 1s;
+		padding: 20px 0;
+	}
+
+	nav > div > ul > li > a {
+		font-size: 2.8rem;
+		z-index: 1;
+		position: relative;
+		text-align: center;
+		padding: 10px;
+		transition: 1s;
+		padding: 20px 5px;
+	}
+
+	nav > div > ul > li > a:hover {
+		color: black;
+		background-color: #e37e00;
+	}
+
+	nav div ul {
+		border: 4px solid #e37e00;
+		background-color: #2e2e2e;
+	}
+
+	nav > div > a:hover {
+		color: black;
+		background-color: #e37e00;
+	}
+
+	nav > div:hover {
+		cursor: pointer;
+		color: black;
+		background-color: #e37e00;
+	}
+}
+
+/*stopka*/
+footer {
+	border-top: 3px solid #e37e00;
+	border-bottom: 3px solid #e37e00;
+	padding: 15px;
+	background-color: #2e2e2e;
+}
+
+#zegar {
+	color: white;
+	font-size: 2.6rem;
+	letter-spacing: 4px;
+	background-color: #005b76;
+	padding: 5px;
+	border: 1px solid white;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+	font-size: 4rem;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 15px;
+	display: block;
+	border: 1px solid white;
+	padding: 10px;
+	background-color: black;
+}
+
+footer a:hover {
+	background-color: #e37e00;
+	color: black;
+	border: 1px solid black;
+}
+
+footer div.socials {
+	display: inline-block;
+	margin-bottom: 15px;
+	width: 100%;
+}
+
+footer div.socials a {
+	float: left;
+	display: block;
+	font-size: 5rem;
+	color: white;
+	width: 50%;
+	padding: 5px;
+}
+
+footer div.socials a.fb {
+	background-color: #4267b2;
+	transition: 0.7s;
+}
+
+footer div.socials a.yt {
+	background-color: #ff0000;
+	transition: 0.7s;
+}
+
+footer h2 {
+	color: white;
+	font-size: 1.7rem;
+}
+
+footer a.contact {
+	transition: 0.7s;
+}
+
+footer span.mandalorian {
+	display: none;
+}
+
+@media(min-width:1366px) {
+	footer {
+		position: relative;
+	}
+
+	#zegar {
+		width: 25%;
+		padding: 15px 5px;
+		font-size: 2rem;
+	}
+
+	footer a.contact {
+		display: block;
+		margin-top: 0;
+		margin-left: 10px;
+		width: 10%;
+		padding: 14px;
+		position: absolute;
+		top: 15px;
+		left: 360px;
+		font-size: 2rem;
+	}
+
+	footer div.socials {
+		text-align: center;
+		margin-bottom: 0;
+		width: 20%;
+		position: absolute;
+		top: 10px;
+		left: 510px;
+		padding: 9px;
+	}
+
+	footer div.socials a {
+		margin-top: 0;
+		font-size: 3rem;
+	}
+
+	h2.copy {
+		position: absolute;
+		bottom: 10px;
+		right: 80px;
+		font-size: 1.8rem;
+	}
+
+	footer span.mandalorian {
+		display: inline;
+		font-size: 5rem;
+		width: 15px;
+		border: 1px solid black;
+		color: black;
+		background-color: #be0000;
+		text-align: center;
+		padding-left: 10px;
+		margin-right: 5px;
+		border-radius: 5px;
+	}
+
+	footer div.socials a.fb:hover {
+		color: #4267b2;
+		background-color: white;
+		border: 1px solid #4267b2;
+	}
+
+	footer div.socials a.yt:hover {
+		color: #ff0000;
+		background-color: white;
+		border: 1px solid #ff0000;
+	}
+}
+}
+
+@media(min-width:1440px) {
+
+	footer {
+		position: relative;
+	}
+
+	#zegar {
+		width: 25%;
+		padding: 15px 5px;
+		font-size: 2rem;
+	}
+
+	footer a.contact {
+		display: block;
+		margin-top: 0;
+		margin-left: 10px;
+		width: 10%;
+		padding: 14px;
+		position: absolute;
+		top: 15px;
+		left: 360px;
+		font-size: 2rem;
+	}
+
+	footer div.socials {
+		text-align: center;
+		margin-bottom: 0;
+		width: 20%;
+		position: absolute;
+		top: 10px;
+		left: 510px;
+		padding: 9px;
+	}
+
+	footer div.socials a {
+		margin-top: 0;
+		font-size: 3rem;
+	}
+
+	h2.copy {
+		position: absolute;
+		bottom: 10px;
+		right: 100px;
+		font-size: 1.8rem;
+	}
+
+	footer span.mandalorian {
+		display: inline;
+		font-size: 5rem;
+		width: 15px;
+		border: 1px solid black;
+		color: black;
+		background-color: #be0000;
+		text-align: center;
+		padding-left: 10px;
+		margin-right: 5px;
+		border-radius: 5px;
+	}
+
+	footer div.socials a.fb:hover {
+		color: #4267b2;
+		background-color: white;
+		border: 1px solid #4267b2;
+	}
+
+	footer div.socials a.yt:hover {
+		color: #ff0000;
+		background-color: white;
+		border: 1px solid #ff0000;
+	}
+}
+
+@media(min-width:1600px) {
+	footer a.contact {
+		left: 430px;
+	}
+
+	footer div.socials {
+		left: 620px;
+	}
+}
+
+@media(min-width:1900px) {
+	footer a.contact {
+		left: 490px;
+	}
+
+	footer div.socials {
+		left: 690px;
+	}
+}
+
+/*przycisk galeri*/
+.photo_button {
+	display: none;
+}
+
+@media(min-width:1366px) {
+	.photo_button {
+		display: block;
+		position: fixed;
+		z-index: 110;
+		top: 66%;
+		right: -280px;
+		background-color: #393939;
+		text-decoration: none;
+		color: white;
+		font-size: 3rem;
+		border: 2px solid white;
+		padding: 5px 15px;
+		transition: ease-in-out 1s;
+	}
+
+	.photo_button:hover {
+		color: white;
+		background-color: #6f0162;
+		border: 2px solid white;
+		right: 1px;
+	}
+}
+
+@media(min-width:1440px) {
+	.photo_button {
+		display: block;
+		position: fixed;
+		z-index: 110;
+		top: 66%;
+		right: -280px;
+		background-color: #393939;
+		text-decoration: none;
+		color: white;
+		font-size: 3rem;
+		border: 2px solid white;
+		padding: 5px 15px;
+		transition: ease-in-out 1s;
+	}
+
+	.photo_button:hover {
+		color: white;
+		background-color: #6f0162;
+		border: 2px solid white;
+		right: 1px;
+	}
+}

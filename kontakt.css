@@ -1,0 +1,159 @@
+h2.kontakt {
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	border: 2px solid white;
+	margin: 10px;
+	display: block;
+	padding: 5px 0;
+	background-color: #01580e;
+}
+
+p.phone {
+	display: block;
+	font-size: 2rem;
+	color: white;
+	text-align: center;
+	padding: 10px 0;
+}
+
+h3.kontakt {
+	font-size: 2.5rem;
+	text-align: center;
+	color: white;
+	margin: 10px 5px;
+	padding: 10px 0;
+}
+
+form {
+	color: white;
+	text-align: center;
+	font-size: 2.4rem;
+	margin-bottom: 15px;
+	border: 1px solid white;
+	margin: 0 5px 15px;
+}
+
+form input {
+	width: 93vw;
+	height: 6vh;
+	margin: 0 5px;
+}
+
+iframe.mapa {
+	max-width: 80vw;
+	margin-left: 5px;
+}
+
+form input.wyslij {
+	font-family: 'Paytone One', sans-serif;
+	font-size: 2.5rem;
+	margin-top: 15px;
+	background-color: black;
+	color: white;
+	border: 2px solid white;
+	padding: 15px;
+	height: 12vh;
+	margin-bottom: 5px;
+}
+
+@media(min-width:533px) {
+	form input.wyslij {
+		transition: 0.6s;
+		height: 20vh;
+	}
+}
+
+@media(min-width:1024px) {
+	h2.kontakt {
+		width: 45vw;
+		font-size: 2.7rem;
+		padding: 10px;
+	}
+
+	p.phone {
+		width: 45vw;
+	}
+
+	iframe.mapa {
+		width: 45vw;
+		margin-left: 5px;
+	}
+
+	div.first {
+		display: inline-block;
+		margin-left: 15px;
+	}
+
+	div.second {
+		display: inline-block;
+		width: 45vw;
+		margin-left: 10px;
+	}
+
+	form input {
+		width: 43vw;
+		height: 4vh;
+		margin: 0 5px;
+	}
+
+	form input.wyslij {
+		height: 8vh;
+	}
+}
+
+@media(min-width:1440px) {
+	main {
+		text-align: center;
+	}
+
+	h2.kontakt {
+		width: 40vw;
+		display: inline-block;
+	}
+
+	p.phone {
+		width: 40vw;
+		display: inline-block;
+		margin-bottom: 15px;
+	}
+
+	iframe.mapa {
+		width: 45vw;
+		height: 55vh;
+	}
+
+	div.first {
+		text-align: center;
+		width: 50vw;
+		margin-bottom: 0;
+	}
+
+	div.second {
+		width: 20vw;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+
+	form {
+		font-size: 2.5rem;
+		width: 20vw;
+	}
+
+	form input {
+		width: 19vw;
+	}
+
+	textarea {
+		height: 15vh;
+	}
+
+	form input.wyslij:hover {
+		background-color: #00a200;
+		cursor: pointer;
+	}
+
+	textarea {
+		resize: vertical;
+	}
+}

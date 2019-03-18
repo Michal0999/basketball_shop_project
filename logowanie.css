@@ -1,0 +1,170 @@
+/*
+font-family: 'Bangers',
+cursive;
+font-family: 'Paytone One',
+sans-serif;
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	font-family: 'Paytone One', sans-serif;
+	font-size: 10px;
+	background-image: url(img/dark_wood.png);
+	font-family: 'Paytone One', sans-serif;
+	text-align: center;
+}
+
+a {
+	background-color: #359af0;
+	width: 75vw;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	border: 3px solid white;
+	display: block;
+	padding: 5px;
+	font-size: 2.5rem;
+	color: white;
+	position: relative;
+	text-decoration: none;
+}
+
+.ikona {
+	font-size: 10rem;
+	color: #e6972a;
+}
+
+h1 {
+	font-size: 3.6rem;
+	letter-spacing: 6px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.logowanie {
+	border-bottom: 2px solid white;
+}
+
+.rejestracja {}
+
+form {
+	color: white;
+	text-align: center;
+	font-size: 2.5rem;
+}
+
+input {
+	width: 85vw;
+	height: 40px;
+	border: 2px solid #e68808;
+	border-radius: 5px;
+}
+
+input:focus {
+	background-color: #85ea8d;
+}
+
+input[type=checkbox] {
+	width: 50px;
+	height: 25px;
+	margin-top: 20px;
+}
+
+span.regulamin {
+	font-size: 2.2rem;
+}
+
+.potwierdz {
+	margin-top: 20px;
+	margin-bottom: 35px;
+	background-color: #fdab11;
+	border: 0;
+	font-size: 2rem;
+	font-family: 'Paytone One', sans-serif;
+}
+
+.potwierdz:hover {
+	cursor: pointer;
+	background-color: #2f9a00;
+	transition: 0.6s;
+}
+
+.g-recaptcha {
+	margin-top: 15px;
+}
+
+.error {
+	color: red;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+@media(min-width:1366px) {
+	a {
+		width: 15vw;
+		top: 20px;
+		left: 40px;
+		position: absolute;
+	}
+
+	a:hover {
+		color: #38b700;
+		border-color: #38b700;
+		background-color: black;
+		transition: 0.6s;
+	}
+
+	span.ikona {
+		display: none;
+	}
+
+	.logowanie {
+		border-bottom: 0;
+	}
+
+	form.logowanie {
+		position: absolute;
+		top: 250px;
+		left: 80px;
+	}
+
+	form.rejestracja {
+		position: absolute;
+		top: 50px;
+		left: 700px;
+	}
+
+	input {
+		width: 35vw;
+	}
+}
+
+@media(min-width:1600px) {
+	form.logowanie {
+		letter-spacing: 3.5px;
+		font-size: 2rem;
+		left: 350px;
+	}
+
+	form.rejestracja {
+		letter-spacing: 3.5px;
+		font-size: 2rem;
+		left: 1000px;
+		top: 20px;
+	}
+
+	input {
+		width: 20vw;
+		font-size: 1.7rem;
+	}
+
+	.potwierdz {
+		margin-bottom: 0;
+	}
+}
